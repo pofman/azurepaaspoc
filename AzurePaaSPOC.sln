@@ -3,12 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzurePaasPOC.Web", "AzurePaasPOC.Web\AzurePaasPOC.Web.csproj", "{2D4F0240-8D16-417A-940F-4BD273FD2EF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzurePaasPOC.Web", "AzurePaasPOC.Web\AzurePaasPOC.Web.csproj", "{2D4F0240-8D16-417A-940F-4BD273FD2EF5}"
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "AzurePaaSPOC.AzureResources", "AzurePaaSPOC.AzureResources\AzurePaaSPOC.AzureResources.deployproj", "{D38B5394-86D0-45B9-9E80-567CAF5BEFFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{29AF56DC-46CD-473C-8243-C6A786BC619D}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
