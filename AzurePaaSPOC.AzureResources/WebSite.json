@@ -72,7 +72,40 @@
       "properties": {
         "name": "[variables('webSiteName')]",
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('hostingPlanName'))]"
-      }
+      },
+      "resources": [
+        // These are deployment slots to use them the App service plan must be standard (S*) or above
+        //{
+        //  "apiVersion": "2015-08-01",
+        //  "name": "Dev",
+        //  "type": "slots",
+        //  "tags": {
+        //    "displayName": "Development"
+        //  },
+        //  "location": "[resourceGroup().location]",
+        //  "dependsOn": [
+        //    "[resourceId('Microsoft.Web/Sites', variables('webSiteName'))]"
+        //  ],
+        //  "properties": {
+        //  },
+        //  "resources": []
+        //},
+        //{
+        //  "apiVersion": "2015-08-01",
+        //  "name": "QC",
+        //  "type": "slots",
+        //  "tags": {
+        //    "displayName": "QC"
+        //  },
+        //  "location": "[resourceGroup().location]",
+        //  "dependsOn": [
+        //    "[resourceId('Microsoft.Web/Sites', variables('webSiteName'))]"
+        //  ],
+        //  "properties": {
+        //  },
+        //  "resources": []
+        //}
+      ] 
     },
     {
       "apiVersion": "2014-04-01",
